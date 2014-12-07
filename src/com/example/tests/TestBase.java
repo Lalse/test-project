@@ -1,5 +1,6 @@
 package com.example.tests;
 
+import static com.example.tests.TestBase.driver;
 import static org.junit.Assert.fail;
 
 import java.util.concurrent.TimeUnit;
@@ -10,6 +11,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -17,7 +19,7 @@ import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
-	private static WebDriver driver;
+	public static WebDriver driver;
 	private static String baseUrl;
 	private static boolean acceptNextAlert = true;
 	private static StringBuffer verificationErrors = new StringBuffer();
@@ -58,6 +60,46 @@ public class TestBase {
 	protected void openMainPage() {
 		driver.get(baseUrl + "/addressbookv4.1.4/");
 	}
+	
+	protected void gotoHome() {
+		driver.findElement(By.linkText("home")).click();
+	}
+
+	protected void submitNewContactCreation() {
+		driver.findElement(By.name("submit")).click();
+	}
+
+	protected void fillNewContactForm(ContactData contact) {
+		driver.findElement(By.name("firstname")).clear();
+	    driver.findElement(By.name("firstname")).sendKeys(contact.contactname);
+	    driver.findElement(By.name("lastname")).clear();
+	    driver.findElement(By.name("lastname")).sendKeys(contact.lastname);
+	    driver.findElement(By.name("address")).clear();
+	    driver.findElement(By.name("address")).sendKeys(contact.adress1);
+	    driver.findElement(By.name("home")).clear();
+	    driver.findElement(By.name("home")).sendKeys(contact.telefoneHome);
+	    driver.findElement(By.name("mobile")).clear();
+	    driver.findElement(By.name("mobile")).sendKeys(contact.telefoneMobile);
+	    driver.findElement(By.name("work")).clear();
+	    driver.findElement(By.name("work")).sendKeys(contact.telefoneWork);
+	    driver.findElement(By.name("email")).clear();
+	    driver.findElement(By.name("email")).sendKeys(contact.email1);
+	    driver.findElement(By.name("email2")).clear();
+	    driver.findElement(By.name("email2")).sendKeys(contact.email2);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.selectDay);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.selectMonth);
+	    driver.findElement(By.name("byear")).clear();
+	    driver.findElement(By.name("byear")).sendKeys(contact.year);
+	    driver.findElement(By.name("address2")).clear();
+	    driver.findElement(By.name("address2")).sendKeys(contact.adress2_2);
+	    driver.findElement(By.name("phone2")).clear();
+	    driver.findElement(By.name("phone2")).sendKeys(contact.telefoneHome2);
+	}
+
+	protected void initNewContactCreation() {
+		driver.findElement(By.linkText("add new")).click();
+	}
+
 
 	@AfterTest
 	public void tearDown() throws Exception {
