@@ -16,7 +16,7 @@ public class ContactHelper extends HelperBase {
 		click(By.name("submit"));
 	}
 
-	public void fillNewContactForm(ContactData contact) {
+	public void fillContactForm(ContactData contact) {
 		type(By.name("firstname"),contact.contactname);
 		type(By.name("lastname"),contact.lastname);
 		type(By.name("address"),contact.adress1);
@@ -38,6 +38,26 @@ public class ContactHelper extends HelperBase {
 
 	public void initNewContactCreation() {
 		click(By.linkText("add new"));
+	}
+
+	public void deleteContact() {
+		click(By.xpath("//input[@value ='Delete']"));
+		
+	}
+
+	public void openEditContactForm(int index) {
+		
+		 if (driver.findElement(By.xpath("(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + index + "]"))!= null)
+		{
+		click(By.xpath(( "(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + index + "]")));
+		}
+				
+	}
+
+	
+	public void submitContactModification() {
+		click(By.xpath("//input[@value ='Update']"));
+		
 	}
 
 }

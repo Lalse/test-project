@@ -23,7 +23,7 @@ public class ContactCreationTests extends TestBase{
     contact.year = "2014";
     contact.adress2_2 = "adress2";
     contact.telefoneHome2 = "123456";
-	app.getContactHelper().fillNewContactForm(contact);
+	app.getContactHelper().fillContactForm(contact);
     app.getContactHelper().submitNewContactCreation();
     app.getNavigationHelper().gotoHome();
   }
@@ -32,8 +32,8 @@ public class ContactCreationTests extends TestBase{
   public void testEmptyCreationNewContact() throws Exception {
     app.getNavigationHelper().openMainPage();
     app.getContactHelper().initNewContactCreation();
-    ContactData contact = new ContactData("", "", "", "", "", "", "", "", "", "", "", "", "");
-	app.getContactHelper().fillNewContactForm(contact);
+    ContactData contact = new ContactData();
+	app.getContactHelper().fillContactForm(contact);
     app.getContactHelper().submitNewContactCreation();
     app.getNavigationHelper().gotoHome();
   }
