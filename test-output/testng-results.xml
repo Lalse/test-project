@@ -1,63 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="188564" started-at="2015-01-25T20:52:53Z" finished-at="2015-01-25T20:56:01Z">
+  <suite name="Default suite" duration-ms="142667" started-at="2015-01-26T01:22:15Z" finished-at="2015-01-26T01:24:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="188564" started-at="2015-01-25T20:52:53Z" finished-at="2015-01-25T20:56:01Z">
-      <class name="com.example.tests.ContactRemovalTests">
-        <test-method status="PASS" signature="deleteSomeContact()[pri:0, instance:com.example.tests.ContactRemovalTests@c39f790]" name="deleteSomeContact" duration-ms="1708" started-at="2015-01-25T22:55:52Z" finished-at="2015-01-25T22:55:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSomeContact -->
-      </class> <!-- com.example.tests.ContactRemovalTests -->
+    <test name="Default test" duration-ms="142667" started-at="2015-01-26T01:22:15Z" finished-at="2015-01-26T01:24:38Z">
       <class name="com.example.tests.GroupModificationTests">
-        <test-method status="PASS" signature="modifySomeGroup()[pri:0, instance:com.example.tests.GroupModificationTests@1ff8b8f]" name="modifySomeGroup" duration-ms="2526" started-at="2015-01-25T22:55:47Z" finished-at="2015-01-25T22:55:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeGroup -->
-      </class> <!-- com.example.tests.GroupModificationTests -->
-      <class name="com.example.tests.ContactCreationTests">
-        <test-method status="PASS" signature="testEmptyCreationNewContact()[pri:0, instance:com.example.tests.ContactCreationTests@224aed64]" name="testEmptyCreationNewContact" duration-ms="1861" started-at="2015-01-25T22:55:54Z" finished-at="2015-01-25T22:55:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyCreationNewContact -->
-        <test-method status="PASS" signature="testNonEmptyCreationNewContact()[pri:0, instance:com.example.tests.ContactCreationTests@224aed64]" name="testNonEmptyCreationNewContact" duration-ms="4867" started-at="2015-01-25T22:55:56Z" finished-at="2015-01-25T22:56:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyCreationNewContact -->
-      </class> <!-- com.example.tests.ContactCreationTests -->
-      <class name="com.example.tests.GroupCreationTests">
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTests@71e7a66b]" name="testEmptyGroupCreation" duration-ms="7053" started-at="2015-01-25T22:55:34Z" finished-at="2015-01-25T22:55:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTests@71e7a66b]" name="testNonEmptyGroupCreation" duration-ms="3624" started-at="2015-01-25T22:55:41Z" finished-at="2015-01-25T22:55:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- com.example.tests.GroupCreationTests -->
-      <class name="com.example.tests.ContactModificationTests">
-        <test-method status="PASS" signature="modifySomeContact()[pri:0, instance:com.example.tests.ContactModificationTests@2ac1fdc4]" name="modifySomeContact" duration-ms="2149" started-at="2015-01-25T22:55:45Z" finished-at="2015-01-25T22:55:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifySomeContact -->
-      </class> <!-- com.example.tests.ContactModificationTests -->
-      <class name="com.example.tests.GroupRemovalTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupRemovalTests@2471cca7]" name="setUp" is-config="true" duration-ms="161580" started-at="2015-01-25T22:52:53Z" finished-at="2015-01-25T22:55:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="setUp" is-config="true" duration-ms="123693" started-at="2015-01-26T03:22:15Z" finished-at="2015-01-26T03:24:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteSomeGroup()[pri:0, instance:com.example.tests.GroupRemovalTests@2471cca7]" name="deleteSomeGroup" duration-ms="2538" started-at="2015-01-25T22:55:50Z" finished-at="2015-01-25T22:55:52Z">
+        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="modifySomeGroup" duration-ms="5666" started-at="2015-01-26T03:24:19Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-26T03:24:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test-923812224, header=, footer=]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteSomeGroup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupRemovalTests@2471cca7]" name="tearDown" is-config="true" duration-ms="595" started-at="2015-01-25T22:56:01Z" finished-at="2015-01-25T22:56:01Z">
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="modifySomeGroup" duration-ms="2979" started-at="2015-01-26T03:24:25Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-26T03:24:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test2112927027, header=test-505311051, footer=test-317894118]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="modifySomeGroup" duration-ms="2531" started-at="2015-01-26T03:24:28Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-26T03:24:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test-796963224, header=, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="modifySomeGroup" duration-ms="2916" started-at="2015-01-26T03:24:30Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-26T03:24:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=test1518483255, header=test-1637718937, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="modifySomeGroup(com.example.tests.GroupData)[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="modifySomeGroup" duration-ms="3951" started-at="2015-01-26T03:24:33Z" data-provider="randomValidGroupGenerator" finished-at="2015-01-26T03:24:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GroupData [groupname=, header=test-1313669652, footer=]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifySomeGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.GroupModificationTests@2d6d8735]" name="tearDown" is-config="true" duration-ms="898" started-at="2015-01-26T03:24:37Z" finished-at="2015-01-26T03:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.GroupRemovalTests -->
+      </class> <!-- com.example.tests.GroupModificationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

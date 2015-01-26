@@ -47,9 +47,9 @@ public class ContactHelper extends HelperBase {
 
 	public void openEditContactForm(int index) {
 		
-		 if (driver.findElement(By.xpath("(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + index + "]"))!= null)
+		 if (driver.findElement(By.xpath("(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + (index + 1) + "]"))!= null)
 		{
-		click(By.xpath(( "(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + index + "]")));
+		click(By.xpath(( "(.//*[@id='maintable']/tbody/tr/td[7]/a/img)[" + (index + 1) + "]")));
 		}
 				
 	}
