@@ -52,6 +52,12 @@ public class TestBase {
 			
 			return "test" + rnd.nextInt();
 		}
+	}
+
+	protected void creationSomeGroup(GroupData group) {
+		app.getGroupHelper().initGroupCreation();
+	    app.getGroupHelper().fillGroupForm(group);
+	    app.getGroupHelper().submitGroupCreation();
 	} 
 	
 

@@ -8,6 +8,8 @@ import java.util.Random;
 
 import org.testng.annotations.Test;
 
+import bsh.Console;
+
 public class GroupRemovalTests extends TestBase{
 	
 	@Test
@@ -17,26 +19,38 @@ public class GroupRemovalTests extends TestBase{
 		app.getNavigationHelper().gotoGroupPage();
 		//save old state
 	    List<GroupData> oldList = app.getGroupHelper().getGroups();
-	    Random rnd = new Random();
-	    int index = rnd.nextInt(oldList.size()-1);
-	    
-	    //actions 
-		app.getGroupHelper().deleteGroup(index);
-		app.getNavigationHelper().returnToGroupPage();
-				
-		verifiedGroupList(oldList, index);
+	    if(oldList.isEmpty()== true)
+	    {
+	    	GroupData group = new GroupData();
+			group.groupname = generateRandomString();
+			group.header = generateRandomString();
+			group.footer = generateRandomString();	
+		    creationSomeGroup(group);
+		    app.getNavigationHelper().gotoGroupPage();
+		    oldList = app.getGroupHelper().getGroups();
+		    removeSomeGroupWithVerification(oldList);		    	
+	    }
+	    else 
+	    {
+	    	removeSomeGroupWithVerification(oldList);	    
+	    }
 	    
 		
 		
 	}
 
-	private void verifiedGroupList(List<GroupData> oldList, int index) {
+	private void removeSomeGroupWithVerification(List<GroupData> oldList) {
+		Random rnd = new Random();
+	    int index = rnd.nextInt(oldList.size());
+	     //actions 
+		app.getGroupHelper().deleteGroup(index);
+		app.getNavigationHelper().returnToGroupPage();
 		//save new state
-	    List<GroupData> newList = app.getGroupHelper().getGroups();
-	    //compare states
-	    oldList.remove(index);
-	    Collections.sort(oldList);
-	    assertEquals(newList, oldList);
+		List<GroupData> newList = app.getGroupHelper().getGroups();
+		//compare states
+		oldList.remove(index);
+		Collections.sort(oldList);
+		assertEquals(newList, oldList);
 	}
 	
 

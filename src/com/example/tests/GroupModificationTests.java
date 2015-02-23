@@ -18,7 +18,7 @@ public class GroupModificationTests extends TestBase {
 		//save old state
 	    List<GroupData> oldList = app.getGroupHelper().getGroups();
 	    Random rnd = new Random();
-	    int index = rnd.nextInt(oldList.size()-1);
+	    int index = rnd.nextInt(oldList.size());
 	    //actions 
 		app.getGroupHelper().initGroupModification(index);
 		
