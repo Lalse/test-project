@@ -1,45 +1,35 @@
 package com.example.tests;
 
-import org.testng.annotations.BeforeTest;
+import static org.testng.Assert.assertEquals;
+
+import java.util.Collections;
+import java.util.List;
+
 import org.testng.annotations.Test;
 
 public class ContactCreationTests extends TestBase{
-  
-  @Test
-  public void testNonEmptyCreationNewContact() throws Exception {
-    app.getNavigationHelper().openMainPage();
-    app.getContactHelper().initNewContactCreation();
-    ContactData contact = new ContactData();
-    contact.contactname = "contactname1";
-    contact.lastname = "last_name";
-    contact.adress1 = "adress1";
-    contact.telefoneHome = "12345";
-    contact.telefoneMobile = "123456";
-    contact.telefoneWork = "1234567";
-    contact.email1 = "test@test.com";
-    contact.email2 = "test1@test.com";
-    contact.selectDay = "1";
-    contact.selectMonth = "January";
-    contact.year = "2014";
-    contact.adress2_2 = "adress2";
-    contact.telefoneHome2 = "123456";
-	app.getContactHelper().fillContactForm(contact);
-    app.getContactHelper().submitNewContactCreation();
-    app.getNavigationHelper().gotoHome();
-  }
-  
-  @Test
-  public void testEmptyCreationNewContact() throws Exception {
-    app.getNavigationHelper().openMainPage();
-    app.getContactHelper().initNewContactCreation();
-    ContactData contact = new ContactData();
-	app.getContactHelper().fillContactForm(contact);
-    app.getContactHelper().submitNewContactCreation();
-    app.getNavigationHelper().gotoHome();
-  }
+	
 
-
- 
+  
+  @Test(dataProvider = "randomValidContactGenerator")
+  public void testCreationNewContactWithValidData(ContactData contact) throws Exception {
+    app.getNavigationHelper().openMainPage();
+    //save old state
+     List<ContactData> oldList = app.getContactHelper().getContacts();
+       
+    //actions
+    
+	createSomeContact(contact);
+    app.getNavigationHelper().gotoHome();
+    //save new state
+    List<ContactData> newList = app.getContactHelper().getContacts();
+    //compare states
+   
+    oldList.add(contact);
+    Collections.sort(oldList);
+    assertEquals(newList, oldList);
+    
+  }
 
   
 }

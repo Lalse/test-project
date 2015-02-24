@@ -17,22 +17,40 @@ public class GroupModificationTests extends TestBase {
 		app.getNavigationHelper().gotoGroupPage();
 		//save old state
 	    List<GroupData> oldList = app.getGroupHelper().getGroups();
-	    Random rnd = new Random();
-	    int index = rnd.nextInt(oldList.size());
-	    //actions 
-		app.getGroupHelper().initGroupModification(index);
+	    //actions
+	    if(oldList.isEmpty()== true)
+	    {
+	    	
+		    creationSomeGroup(group);
+		    app.getNavigationHelper().gotoGroupPage();
+		    oldList = app.getGroupHelper().getGroups();
+	        modifySomeGroupWithVerification(oldList, group);
+	    }
+	    else
+	    {
 		
-		app.getGroupHelper().fillGroupForm(group );
-		app.getGroupHelper().submitGroupModification();
-		app.getNavigationHelper().returnToGroupPage();
-		//save new state
-	    List<GroupData> newList = app.getGroupHelper().getGroups();
-	    //compare states
-	    oldList.remove(index);
-	    oldList.add(group);
-	    Collections.sort(oldList);
-	    assertEquals(newList, oldList);
-		
-	}
+	    	 modifySomeGroupWithVerification(oldList, group);
+	    }
+
+}
+
+private void modifySomeGroupWithVerification(List<GroupData> oldList, GroupData group) {
+	Random rnd = new Random();
+	int index = rnd.nextInt(oldList.size());
+	//actions 
+	app.getGroupHelper().initGroupModification(index);
+	
+	app.getGroupHelper().fillGroupForm(group );
+	app.getGroupHelper().submitGroupModification();
+	app.getNavigationHelper().returnToGroupPage();
+	//save new state
+	List<GroupData> newList = app.getGroupHelper().getGroups();
+	//compare states
+	oldList.remove(index);
+	oldList.add(group);
+	Collections.sort(oldList);
+	assertEquals(newList, oldList);
+    } 
+
 
 }

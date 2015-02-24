@@ -42,6 +42,34 @@ public class TestBase {
 		return list.iterator();
 	}
 	
+	@DataProvider	
+	public Iterator<Object[]> randomValidContactGenerator(){
+		List<Object[]> list = new ArrayList<Object[]>();
+		Random rnd = new Random();
+		for(int i=0; i<5; i++){
+			ContactData contact = new ContactData();
+			
+			contact.contactname = generateRandomString();
+			contact.lastname = generateRandomString();
+			 contact.adress1 = generateRandomString();
+			 contact.telefoneHome = generateRandomString();
+			 contact.telefoneMobile = generateRandomString();
+			 contact.telefoneWork = generateRandomString();
+			 contact.email1 = generateRandomString();
+			 contact.email2 = generateRandomString();
+			 contact.selectDay = "";
+			 contact.selectMonth = "";
+			 contact.year = "";
+			 contact.adress2_2 = generateRandomString();
+			 contact.telefoneHome2 = generateRandomString();
+			 list.add(new Object[]{contact});
+			
+			
+		}
+		
+		return list.iterator();
+		
+	}
 	
 	public String generateRandomString() {
 		Random rnd = new Random();
@@ -53,12 +81,21 @@ public class TestBase {
 			return "test" + rnd.nextInt();
 		}
 	}
+	
+	
 
 	protected void creationSomeGroup(GroupData group) {
 		app.getGroupHelper().initGroupCreation();
 	    app.getGroupHelper().fillGroupForm(group);
 	    app.getGroupHelper().submitGroupCreation();
+	}
+
+	protected void createSomeContact(ContactData contact) {
+		app.getContactHelper().initNewContactCreation();
+		app.getContactHelper().fillContactForm(contact);
+	    app.getContactHelper().submitNewContactCreation();
 	} 
+	
 	
 
 }
