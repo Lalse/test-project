@@ -2,41 +2,35 @@
 <testng-results skipped="0" failed="5" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="172815" started-at="2015-02-24T11:19:31Z" finished-at="2015-02-24T11:22:24Z">
+  <suite name="Default suite" duration-ms="22870" started-at="2015-02-25T23:27:52Z" finished-at="2015-02-25T23:28:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="172815" started-at="2015-02-24T11:19:31Z" finished-at="2015-02-24T11:22:24Z">
+    <test name="Default test" duration-ms="22870" started-at="2015-02-25T23:27:52Z" finished-at="2015-02-25T23:28:15Z">
       <class name="com.example.tests.ContactModificationTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="setUp" is-config="true" duration-ms="11588" started-at="2015-02-24T13:19:31Z" finished-at="2015-02-24T13:19:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="setUp" is-config="true" duration-ms="10590" started-at="2015-02-26T01:27:52Z" finished-at="2015-02-26T01:28:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="34437" started-at="2015-02-24T13:19:43Z" data-provider="randomValidContactGenerator" finished-at="2015-02-24T13:20:17Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="3824" started-at="2015-02-26T01:28:02Z" data-provider="randomValidContactGenerator" finished-at="2015-02-26T01:28:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [contactname=test-1271074697, lastname=test-973475681, adress1=test-999922111, telefoneHome=test664351327, telefoneMobile=test1852635050, telefoneWork=, email1=test2046570229, email2=, selectDay=, selectMonth=, year=, adress2_2=, telefoneHome2=]]]>
+                <![CDATA[ContactData [contactname=, lastname=, adress1=test-2145725554, telefoneHome=test1918683149, telefoneMobile=test962008177, telefoneWork=test-1108034647, email1=, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-2145725554, telefoneHome=test1918683149, telefoneMobile=test962008177, telefoneWork=test-1108034647, email1=, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-2145725554, telefoneHome=test1918683149, telefoneMobile=test962008177, telefoneWork=test-1108034647, email1=, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at com.example.fw.HelperBase.selectByText(HelperBase.java:67)
-	at com.example.fw.ContactHelper.fillContactForm(ContactHelper.java:33)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:44)
+              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-2145725554, telefoneHome=test1918683149, telefoneMobile=test962008177, telefoneWork=test-1108034647, email1=, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-2145725554, telefoneHome=test1918683149, telefoneMobile=test962008177, telefoneWork=test-1108034647, email1=, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:549)
+	at org.testng.Assert.assertEquals(Assert.java:514)
+	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
 	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -64,36 +58,30 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="32320" started-at="2015-02-24T13:20:17Z" data-provider="randomValidContactGenerator" finished-at="2015-02-24T13:20:49Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="1803" started-at="2015-02-26T01:28:06Z" data-provider="randomValidContactGenerator" finished-at="2015-02-26T01:28:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [contactname=test1242714668, lastname=test800660216, adress1=test-1796527736, telefoneHome=test-307522254, telefoneMobile=, telefoneWork=, email1=test-1117307288, email2=test1483903199, selectDay=, selectMonth=, year=, adress2_2=test1650593131, telefoneHome2=test-1570804760]]]>
+                <![CDATA[ContactData [contactname=, lastname=, adress1=test1681982754, telefoneHome=test883440935, telefoneMobile=, telefoneWork=test1009409800, email1=test-1599064123, email2=test936394113, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1608449603]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test1681982754, telefoneHome=test883440935, telefoneMobile=, telefoneWork=test1009409800, email1=test-1599064123, email2=test936394113, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1608449603] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test1681982754, telefoneHome=test883440935, telefoneMobile=, telefoneWork=test1009409800, email1=test-1599064123, email2=test936394113, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1608449603]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at com.example.fw.HelperBase.selectByText(HelperBase.java:67)
-	at com.example.fw.ContactHelper.fillContactForm(ContactHelper.java:33)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:44)
+              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test1681982754, telefoneHome=test883440935, telefoneMobile=, telefoneWork=test1009409800, email1=test-1599064123, email2=test936394113, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1608449603] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test1681982754, telefoneHome=test883440935, telefoneMobile=, telefoneWork=test1009409800, email1=test-1599064123, email2=test936394113, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1608449603]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:549)
+	at org.testng.Assert.assertEquals(Assert.java:514)
+	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
 	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -121,36 +109,30 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="31639" started-at="2015-02-24T13:20:49Z" data-provider="randomValidContactGenerator" finished-at="2015-02-24T13:21:21Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="2172" started-at="2015-02-26T01:28:08Z" data-provider="randomValidContactGenerator" finished-at="2015-02-26T01:28:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [contactname=test640420609, lastname=test1354076786, adress1=test-774717872, telefoneHome=, telefoneMobile=, telefoneWork=test-1704240016, email1=test1228502897, email2=test-966776238, selectDay=, selectMonth=, year=, adress2_2=test-68919966, telefoneHome2=test-1365934314]]]>
+                <![CDATA[ContactData [contactname=test138818624, lastname=test967082142, adress1=test-905038335, telefoneHome=test381785124, telefoneMobile=test-978277062, telefoneWork=test-1926249596, email1=test1541184378, email2=test1255130881, selectDay=null, selectMonth=null, year=null, adress2_2=test1716091144, telefoneHome2=]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Lists differ at element [5]: ContactData [contactname=test138818624, lastname=test967082142, adress1=test-905038335, telefoneHome=test381785124, telefoneMobile=test-978277062, telefoneWork=test-1926249596, email1=test1541184378, email2=test1255130881, selectDay=null, selectMonth=null, year=null, adress2_2=test1716091144, telefoneHome2=] != ContactData [contactname=test138818624, lastname= test967082142, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test138818624, lastname=test967082142, adress1=test-905038335, telefoneHome=test381785124, telefoneMobile=test-978277062, telefoneWork=test-1926249596, email1=test1541184378, email2=test1255130881, selectDay=null, selectMonth=null, year=null, adress2_2=test1716091144, telefoneHome2=]] but found [ContactData [contactname=test138818624, lastname= test967082142, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at com.example.fw.HelperBase.selectByText(HelperBase.java:67)
-	at com.example.fw.ContactHelper.fillContactForm(ContactHelper.java:33)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:44)
+              <![CDATA[java.lang.AssertionError: Lists differ at element [5]: ContactData [contactname=test138818624, lastname=test967082142, adress1=test-905038335, telefoneHome=test381785124, telefoneMobile=test-978277062, telefoneWork=test-1926249596, email1=test1541184378, email2=test1255130881, selectDay=null, selectMonth=null, year=null, adress2_2=test1716091144, telefoneHome2=] != ContactData [contactname=test138818624, lastname= test967082142, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test138818624, lastname=test967082142, adress1=test-905038335, telefoneHome=test381785124, telefoneMobile=test-978277062, telefoneWork=test-1926249596, email1=test1541184378, email2=test1255130881, selectDay=null, selectMonth=null, year=null, adress2_2=test1716091144, telefoneHome2=]] but found [ContactData [contactname=test138818624, lastname= test967082142, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:549)
+	at org.testng.Assert.assertEquals(Assert.java:514)
+	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
 	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -178,36 +160,30 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="31138" started-at="2015-02-24T13:21:21Z" data-provider="randomValidContactGenerator" finished-at="2015-02-24T13:21:52Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="1920" started-at="2015-02-26T01:28:10Z" data-provider="randomValidContactGenerator" finished-at="2015-02-26T01:28:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [contactname=test-1275953952, lastname=test-355853963, adress1=, telefoneHome=test2074313377, telefoneMobile=, telefoneWork=test1984759211, email1=, email2=test1956458040, selectDay=, selectMonth=, year=, adress2_2=test-1777349951, telefoneHome2=test-1287599348]]]>
+                <![CDATA[ContactData [contactname=, lastname=, adress1=test-1556144703, telefoneHome=test-385984056, telefoneMobile=test-1305989563, telefoneWork=test-1304893179, email1=, email2=test989366377, selectDay=null, selectMonth=null, year=null, adress2_2=test2038424476, telefoneHome2=test1585661056]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-1556144703, telefoneHome=test-385984056, telefoneMobile=test-1305989563, telefoneWork=test-1304893179, email1=, email2=test989366377, selectDay=null, selectMonth=null, year=null, adress2_2=test2038424476, telefoneHome2=test1585661056] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-1556144703, telefoneHome=test-385984056, telefoneMobile=test-1305989563, telefoneWork=test-1304893179, email1=, email2=test989366377, selectDay=null, selectMonth=null, year=null, adress2_2=test2038424476, telefoneHome2=test1585661056]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at com.example.fw.HelperBase.selectByText(HelperBase.java:67)
-	at com.example.fw.ContactHelper.fillContactForm(ContactHelper.java:33)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:44)
+              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-1556144703, telefoneHome=test-385984056, telefoneMobile=test-1305989563, telefoneWork=test-1304893179, email1=, email2=test989366377, selectDay=null, selectMonth=null, year=null, adress2_2=test2038424476, telefoneHome2=test1585661056] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-1556144703, telefoneHome=test-385984056, telefoneMobile=test-1305989563, telefoneWork=test-1304893179, email1=, email2=test989366377, selectDay=null, selectMonth=null, year=null, adress2_2=test2038424476, telefoneHome2=test1585661056]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:549)
+	at org.testng.Assert.assertEquals(Assert.java:514)
+	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
 	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -235,36 +211,30 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="31273" started-at="2015-02-24T13:21:52Z" data-provider="randomValidContactGenerator" finished-at="2015-02-24T13:22:23Z">
+        <test-method status="FAIL" signature="modifySomeContact(com.example.tests.ContactData)[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="modifySomeContact" duration-ms="1914" started-at="2015-02-26T01:28:12Z" data-provider="randomValidContactGenerator" finished-at="2015-02-26T01:28:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ContactData [contactname=test-1857746200, lastname=, adress1=, telefoneHome=test-1134073932, telefoneMobile=, telefoneWork=, email1=test-126457946, email2=test-325471115, selectDay=, selectMonth=, year=, adress2_2=test1431877506, telefoneHome2=]]]>
+                <![CDATA[ContactData [contactname=test407018645, lastname=test691874745, adress1=test-216664767, telefoneHome=test639628062, telefoneMobile=test-1380237314, telefoneWork=test-685482986, email1=, email2=test1244113921, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test-1728823240]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Lists differ at element [4]: ContactData [contactname=test1771704527, lastname= test770357053, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test407018645, lastname= test691874745, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test1771704527, lastname= test770357053, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test407018645, lastname= test691874745, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:02:37'
-System info: host: 'pc9-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_31'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-	at com.example.fw.HelperBase.selectByText(HelperBase.java:67)
-	at com.example.fw.ContactHelper.fillContactForm(ContactHelper.java:33)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:44)
+              <![CDATA[java.lang.AssertionError: Lists differ at element [4]: ContactData [contactname=test1771704527, lastname= test770357053, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test407018645, lastname= test691874745, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test1771704527, lastname= test770357053, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test407018645, lastname= test691874745, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:549)
+	at org.testng.Assert.assertEquals(Assert.java:514)
+	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
 	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -292,11 +262,11 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifySomeContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="tearDown" is-config="true" duration-ms="364" started-at="2015-02-24T13:22:23Z" finished-at="2015-02-24T13:22:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.ContactModificationTests@16d8735]" name="tearDown" is-config="true" duration-ms="597" started-at="2015-02-26T01:28:14Z" finished-at="2015-02-26T01:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

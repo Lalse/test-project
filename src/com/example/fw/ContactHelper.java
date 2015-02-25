@@ -22,6 +22,7 @@ public class ContactHelper extends HelperBase {
 	}
 
 	public void fillContactForm(ContactData contact) {
+		
 		type(By.name("firstname"),contact.contactname);
 		type(By.name("lastname"),contact.lastname);
 		type(By.name("address"),contact.adress1);

@@ -57,9 +57,9 @@ public class TestBase {
 			 contact.telefoneWork = generateRandomString();
 			 contact.email1 = generateRandomString();
 			 contact.email2 = generateRandomString();
-			 contact.selectDay = "";
-			 contact.selectMonth = "";
-			 contact.year = "";
+			 //contact.selectDay = "";
+			// contact.selectMonth = "";
+			 //contact.year = "";
 			 contact.adress2_2 = generateRandomString();
 			 contact.telefoneHome2 = generateRandomString();
 			 list.add(new Object[]{contact});
