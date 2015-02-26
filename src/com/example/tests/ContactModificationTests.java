@@ -21,8 +21,6 @@ public class ContactModificationTests extends TestBase{
 	     if(oldList.isEmpty()== true)
 	     {
 	    	
-		    //contact.contactname = generateRandomString();
-		   // contact.lastname = generateRandomString();
 		    createSomeContact(contact);
 		   	app.getNavigationHelper().gotoHome();
 		   	oldList = app.getContactHelper().getContacts();
