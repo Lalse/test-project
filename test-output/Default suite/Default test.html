@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 26 01:45:57 EET 2015</td>
+<td>Started on:</td><td>Sun Mar 01 00:13:01 EET 2015</td>
 </tr>
-<tr><td>Total time:</td><td>772 seconds (772394 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31664 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.example.tests.ContactModificationTests.modifySomeContact()'><b>modifySomeContact</b><br>Test class: com.example.tests.ContactModificationTests<br>Parameters: ContactData [contactname=test-458215857, lastname=test-201790999, adress1=test-1923528023, telefoneHome=test-46826637, telefoneMobile=test576370870, telefoneWork=, email1=, email2=test-1648255842, selectDay=null, selectMonth=null, year=null, adress2_2=test-1626475635, telefoneHome2=test-807931410]</td>
-<td><div><pre>java.lang.AssertionError: Lists differ at element [6]: ContactData [contactname=test-1585582741, lastname= test-383251381, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-458215857, lastname= test-201790999, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1585582741, lastname= test-383251381, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-458215857, lastname= test-201790999, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+<td title='com.example.tests.ContactCreationTests.testCreationNewContactWithValidData()'><b>testCreationNewContactWithValidData</b><br>Test class: com.example.tests.ContactCreationTests<br>Parameters: ContactData [contactname=test1671118773, lastname=test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [1]: ContactData [contactname=test-280600578, lastname= test-559921970, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-280600578, lastname= test-559921970, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,15 +107,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace16804248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16804248'><pre>java.lang.AssertionError: Lists differ at element [6]: ContactData [contactname=test-1585582741, lastname= test-383251381, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-458215857, lastname= test-201790999, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1585582741, lastname= test-383251381, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-458215857, lastname= test-201790999, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2562358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2562358'><pre>java.lang.AssertionError: Lists differ at element [1]: ContactData [contactname=test-280600578, lastname= test-559921970, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-280600578, lastname= test-559921970, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -142,18 +140,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>737</td>
-<td>com.example.tests.ContactModificationTests@1d5872c</td></tr>
+<td>7</td>
+<td>com.example.tests.ContactCreationTests@16d8735</td></tr>
 <tr>
-<td title='com.example.tests.ContactModificationTests.modifySomeContact()'><b>modifySomeContact</b><br>Test class: com.example.tests.ContactModificationTests<br>Parameters: ContactData [contactname=test-908902634, lastname=, adress1=, telefoneHome=test-1340751902, telefoneMobile=test-2085091645, telefoneWork=test4175899, email1=test-1892637287, email2=test1782438860, selectDay=null, selectMonth=null, year=null, adress2_2=test352473651, telefoneHome2=test-638524776]</td>
-<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-908902634, lastname=, adress1=, telefoneHome=test-1340751902, telefoneMobile=test-2085091645, telefoneWork=test4175899, email1=test-1892637287, email2=test1782438860, selectDay=null, selectMonth=null, year=null, adress2_2=test352473651, telefoneHome2=test-638524776] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-908902634, lastname=, adress1=, telefoneHome=test-1340751902, telefoneMobile=test-2085091645, telefoneWork=test4175899, email1=test-1892637287, email2=test1782438860, selectDay=null, selectMonth=null, year=null, adress2_2=test352473651, telefoneHome2=test-638524776]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+<td title='com.example.tests.ContactCreationTests.testCreationNewContactWithValidData()'><b>testCreationNewContactWithValidData</b><br>Test class: com.example.tests.ContactCreationTests<br>Parameters: ContactData [contactname=, lastname=test-1602185107, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [1]: ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=, lastname= test-1602185107, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=, lastname= test-1602185107, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -178,15 +175,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace33001926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace33001926'><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-908902634, lastname=, adress1=, telefoneHome=test-1340751902, telefoneMobile=test-2085091645, telefoneWork=test4175899, email1=test-1892637287, email2=test1782438860, selectDay=null, selectMonth=null, year=null, adress2_2=test352473651, telefoneHome2=test-638524776] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-908902634, lastname=, adress1=, telefoneHome=test-1340751902, telefoneMobile=test-2085091645, telefoneWork=test4175899, email1=test-1892637287, email2=test1782438860, selectDay=null, selectMonth=null, year=null, adress2_2=test352473651, telefoneHome2=test-638524776]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+</pre></div><a href='#' onClick='toggleBox("stack-trace360259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace360259'><pre>java.lang.AssertionError: Lists differ at element [1]: ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=, lastname= test-1602185107, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test1671118773, lastname= test-1935422863, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=, lastname= test-1602185107, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -212,18 +208,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>12</td>
-<td>com.example.tests.ContactModificationTests@1d5872c</td></tr>
+<td>1</td>
+<td>com.example.tests.ContactCreationTests@16d8735</td></tr>
 <tr>
-<td title='com.example.tests.ContactModificationTests.modifySomeContact()'><b>modifySomeContact</b><br>Test class: com.example.tests.ContactModificationTests<br>Parameters: ContactData [contactname=test-1011708820, lastname=, adress1=test-1020614572, telefoneHome=test-322463212, telefoneMobile=, telefoneWork=test-1308574722, email1=, email2=test1315325798, selectDay=null, selectMonth=null, year=null, adress2_2=test62314363, telefoneHome2=test815478561]</td>
-<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-1011708820, lastname=, adress1=test-1020614572, telefoneHome=test-322463212, telefoneMobile=, telefoneWork=test-1308574722, email1=, email2=test1315325798, selectDay=null, selectMonth=null, year=null, adress2_2=test62314363, telefoneHome2=test815478561] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1011708820, lastname=, adress1=test-1020614572, telefoneHome=test-322463212, telefoneMobile=, telefoneWork=test-1308574722, email1=, email2=test1315325798, selectDay=null, selectMonth=null, year=null, adress2_2=test62314363, telefoneHome2=test815478561]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+<td title='com.example.tests.ContactCreationTests.testCreationNewContactWithValidData()'><b>testCreationNewContactWithValidData</b><br>Test class: com.example.tests.ContactCreationTests<br>Parameters: ContactData [contactname=test-878318455, lastname=test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [4]: ContactData [contactname=test-878318455, lastname=test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-878318455, lastname= test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-878318455, lastname=test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-878318455, lastname= test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -248,15 +243,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13778506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13778506'><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-1011708820, lastname=, adress1=test-1020614572, telefoneHome=test-322463212, telefoneMobile=, telefoneWork=test-1308574722, email1=, email2=test1315325798, selectDay=null, selectMonth=null, year=null, adress2_2=test62314363, telefoneHome2=test815478561] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1011708820, lastname=, adress1=test-1020614572, telefoneHome=test-322463212, telefoneMobile=, telefoneWork=test-1308574722, email1=, email2=test1315325798, selectDay=null, selectMonth=null, year=null, adress2_2=test62314363, telefoneHome2=test815478561]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+</pre></div><a href='#' onClick='toggleBox("stack-trace21382895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21382895'><pre>java.lang.AssertionError: Lists differ at element [4]: ContactData [contactname=test-878318455, lastname=test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-878318455, lastname= test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-878318455, lastname=test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-878318455, lastname= test-973814646, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -282,18 +276,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>3</td>
-<td>com.example.tests.ContactModificationTests@1d5872c</td></tr>
+<td>1</td>
+<td>com.example.tests.ContactCreationTests@16d8735</td></tr>
 <tr>
-<td title='com.example.tests.ContactModificationTests.modifySomeContact()'><b>modifySomeContact</b><br>Test class: com.example.tests.ContactModificationTests<br>Parameters: ContactData [contactname=test-749370991, lastname=, adress1=test1606127729, telefoneHome=test1517784233, telefoneMobile=, telefoneWork=test1036525434, email1=, email2=test-1791473351, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]</td>
-<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-749370991, lastname=, adress1=test1606127729, telefoneHome=test1517784233, telefoneMobile=, telefoneWork=test1036525434, email1=, email2=test-1791473351, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-749370991, lastname=, adress1=test1606127729, telefoneHome=test1517784233, telefoneMobile=, telefoneWork=test1036525434, email1=, email2=test-1791473351, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+<td title='com.example.tests.ContactCreationTests.testCreationNewContactWithValidData()'><b>testCreationNewContactWithValidData</b><br>Test class: com.example.tests.ContactCreationTests<br>Parameters: ContactData [contactname=test-1615257103, lastname=test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [5]: ContactData [contactname=test-1615257103, lastname=test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-1615257103, lastname= test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1615257103, lastname=test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-1615257103, lastname= test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -318,15 +311,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13647915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13647915'><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-749370991, lastname=, adress1=test1606127729, telefoneHome=test1517784233, telefoneMobile=, telefoneWork=test1036525434, email1=, email2=test-1791473351, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-749370991, lastname=, adress1=test1606127729, telefoneHome=test1517784233, telefoneMobile=, telefoneWork=test1036525434, email1=, email2=test-1791473351, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+</pre></div><a href='#' onClick='toggleBox("stack-trace16890207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16890207'><pre>java.lang.AssertionError: Lists differ at element [5]: ContactData [contactname=test-1615257103, lastname=test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=test-1615257103, lastname= test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-1615257103, lastname=test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=test-1615257103, lastname= test1691882546, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -352,18 +344,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>3</td>
-<td>com.example.tests.ContactModificationTests@1d5872c</td></tr>
+<td>1</td>
+<td>com.example.tests.ContactCreationTests@16d8735</td></tr>
 <tr>
-<td title='com.example.tests.ContactModificationTests.modifySomeContact()'><b>modifySomeContact</b><br>Test class: com.example.tests.ContactModificationTests<br>Parameters: ContactData [contactname=, lastname=, adress1=test-1455838223, telefoneHome=test-1885717889, telefoneMobile=, telefoneWork=test-1421552602, email1=test2123471780, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test1162632885]</td>
-<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-1455838223, telefoneHome=test-1885717889, telefoneMobile=, telefoneWork=test-1421552602, email1=test2123471780, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test1162632885] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-1455838223, telefoneHome=test-1885717889, telefoneMobile=, telefoneWork=test-1421552602, email1=test2123471780, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test1162632885]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+<td title='com.example.tests.ContactCreationTests.testCreationNewContactWithValidData()'><b>testCreationNewContactWithValidData</b><br>Test class: com.example.tests.ContactCreationTests<br>Parameters: ContactData [contactname=, lastname=, adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-719105063, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-719105063, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -388,15 +379,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div><a href='#' onClick='toggleBox("stack-trace15998054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace15998054'><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=, lastname=, adress1=test-1455838223, telefoneHome=test-1885717889, telefoneMobile=, telefoneWork=test-1421552602, email1=test2123471780, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test1162632885] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=, lastname=, adress1=test-1455838223, telefoneHome=test-1885717889, telefoneMobile=, telefoneWork=test-1421552602, email1=test2123471780, email2=, selectDay=null, selectMonth=null, year=null, adress2_2=, telefoneHome2=test1162632885]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
+</pre></div><a href='#' onClick='toggleBox("stack-trace17671287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17671287'><pre>java.lang.AssertionError: Lists differ at element [0]: ContactData [contactname=test-719105063, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] != ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null] expected [ContactData [contactname=test-719105063, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]] but found [ContactData [contactname=, lastname= , adress1=null, telefoneHome=null, telefoneMobile=null, telefoneWork=null, email1=null, email2=null, selectDay=null, selectMonth=null, year=null, adress2_2=null, telefoneHome2=null]]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:549)
 	at org.testng.Assert.assertEquals(Assert.java:514)
-	at com.example.tests.ContactModificationTests.modifySomeContactWithVerification(ContactModificationTests.java:53)
-	at com.example.tests.ContactModificationTests.modifySomeContact(ContactModificationTests.java:34)
+	at com.example.tests.ContactCreationTests.testCreationNewContactWithValidData(ContactCreationTests.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -422,8 +412,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 </pre></div></td>
-<td>2</td>
-<td>com.example.tests.ContactModificationTests@1d5872c</td></tr>
+<td>1</td>
+<td>com.example.tests.ContactCreationTests@16d8735</td></tr>
 </table><p>
 </body>
 </html>

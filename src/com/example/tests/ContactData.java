@@ -51,8 +51,14 @@ public class ContactData implements Comparable<ContactData> {
 
 	@Override
 	public int compareTo(ContactData other) {
+		
+		
+		
 		return this.lastname.toLowerCase().compareTo(other.lastname.toLowerCase());
+		
 	}
+	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

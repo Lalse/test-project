@@ -27,6 +27,7 @@ public class ContactCreationTests extends TestBase{
    
     oldList.add(contact);
     Collections.sort(oldList);
+    Collections.sort(newList);
     assertEquals(newList, oldList);
     
   }

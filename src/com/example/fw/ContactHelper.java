@@ -25,7 +25,7 @@ public class ContactHelper extends HelperBase {
 		
 		type(By.name("firstname"),contact.contactname);
 		type(By.name("lastname"),contact.lastname);
-		type(By.name("address"),contact.adress1);
+		/*type(By.name("address"),contact.adress1);
 		type(By.name("home"),contact.telefoneHome);
 		type(By.name("mobile"), contact.telefoneMobile);
 		type(By.name("work"),contact.telefoneWork);
@@ -36,7 +36,7 @@ public class ContactHelper extends HelperBase {
 	    type(By.name("byear"),contact.year);
 		// selectByText(By.name("new_group"), "group_1");
 		type(By.name("address2"),contact.adress2_2);
-	    type(By.name("phone2"), contact.telefoneHome2);
+	    type(By.name("phone2"), contact.telefoneHome2);*/
 		
 	   
 	   

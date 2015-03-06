@@ -51,7 +51,7 @@ public class TestBase {
 			
 			contact.contactname = generateRandomString();
 			contact.lastname = generateRandomString();
-			 contact.adress1 = generateRandomString();
+			/* contact.adress1 = generateRandomString();
 			 contact.telefoneHome = generateRandomString();
 			 contact.telefoneMobile = generateRandomString();
 			 contact.telefoneWork = generateRandomString();
@@ -61,7 +61,7 @@ public class TestBase {
 			// contact.selectMonth = "";
 			 //contact.year = "";
 			 contact.adress2_2 = generateRandomString();
-			 contact.telefoneHome2 = generateRandomString();
+			 contact.telefoneHome2 = generateRandomString();*/
 			 list.add(new Object[]{contact});
 			
 			
